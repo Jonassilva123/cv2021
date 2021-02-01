@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Container, Typography, makeStyles, Button, Hidden } from '@material-ui/core';
-import SrcAvatar from '../../assets/avatar.png';
+import SrcAvatar from '../../assets/avatar.jpeg';
 
 const useStyles = makeStyles({
   root: {
@@ -22,20 +22,21 @@ function Header() {
       <Grid container justify="center" alignItems="center">
         <Hidden only={['xs', 'sm']}>
           <Grid item justify="center" xs={12} sm={12} md={6} lg={6} xl={6}>
-            <img className={classes.avatarCircle} alt="Christian" src={SrcAvatar} />
+            <img className={classes.avatarCircle} alt="jonas" src={SrcAvatar} />
           </Grid>
         </Hidden>
         <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
           <Typography variant="h4" component="h4">
-            Christian Possidonio 👨🏻‍💻 <br />
+            Jonas Batista 👨🏻‍💻 <br />
             Software Developer
           </Typography>
 
           <br />
 
           <Typography variant="body1" component="body1">
-            Sou um desenvolvedor Full-Stack, trabalho com desenvolvimento de sistemas desde 2013 e tive a oportunidade de trabalhar com
-            diversas tecnologias, hoje meu foco principal é no JavaScript e todo o seu ecossistema para o desenvolvimento web e mobile.
+            Sou um desenvolvedor Front-End, trabalho com desenvolvimento de sistemas de tive a oportunidade de trabalhar com diversas
+            tecnologias como React e React Native, Meu foco principal é no JavaScript e todo o seu ecossistema para o desenvolvimento web e
+            mobile.
           </Typography>
 
           <br />
@@ -46,7 +47,7 @@ function Header() {
             color="secondary"
             className={classes.shadowNone}
             onClick={() => {
-              window.location.href = 'https://docs.google.com/document/d/1kwJsRjsvaXI3JNWC0XXSLUxOJlTsz_l70ksJSCBuIwo/edit?usp=sharing';
+              window.location.href = 'https://docs.google.com/document/d/1lkTEg8jJhDhrPwAkG6nuU0ho6C5kL29vhLXd0JrhspI/edit?usp=sharing';
             }}
           >
             DOWNLOAD DO MEU CV

@@ -16,6 +16,7 @@ import {
   Avatar,
   Badge,
   withStyles,
+  Link,
 } from '@material-ui/core';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
@@ -24,7 +25,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import GetAppIcon from '@material-ui/icons/GetApp';
-import SrcAvatar from '../../assets/avatar.png';
+import SrcAvatar from '../../assets/avatar.jpeg';
 
 const drawerWidth = 240;
 
@@ -130,7 +131,7 @@ function TopBar({ title }) {
           <Typography variant="h6" className={classes.title}>
             <StyledBadge
               onClick={() => {
-                window.location.href = 'https://api.whatsapp.com/send?phone=5521980044029&text=Oi,%20gostaria%20de%20contratar.';
+                window.location.href = 'https://api.whatsapp.com/send?phone=5521991155468&text=Oi,%20gostaria%20de%20contratar.';
               }}
               overlap="circle"
               anchorOrigin={{
@@ -144,32 +145,27 @@ function TopBar({ title }) {
                 alt={title}
                 src={SrcAvatar}
                 onClick={() => {
-                  window.location.href = 'https://api.whatsapp.com/send?phone=5521980044029&text=Oi,%20gostaria%20de%20contratar.';
+                  window.location.href = 'https://api.whatsapp.com/send?phone=5521991155468&text=Oi,%20gostaria%20de%20contratar.';
                 }}
               />
             </StyledBadge>
           </Typography>
-          <IconButton aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" color="inherit">
-            <LinkedInIcon
-              onClick={() => {
-                window.location.href = 'https://www.linkedin.com/in/christian-possidonio/';
-              }}
-            />
-          </IconButton>
-          <IconButton aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" color="inherit">
-            <GitHubIcon
-              onClick={() => {
-                window.location.href = 'https://github.com/christian-de-ornellas';
-              }}
-            />
-          </IconButton>
-          <IconButton aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" color="inherit">
-            <WhatsAppIcon
-              onClick={() => {
-                window.location.href = 'https://api.whatsapp.com/send?phone=5521980044029&text=Oi,%20gostaria%20de%20contratar.';
-              }}
-            />
-          </IconButton>
+          <Link href="https://www.linkedin.com/in/jonas-batista-da-silva-1ba7bb187/" target="blank_">
+            <IconButton aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" color="inherit">
+              <LinkedInIcon />
+            </IconButton>
+          </Link>
+
+          <Link color="primary" href="https://github.com/Jonassilva123" target="blank_">
+            <IconButton aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" color="inherit">
+              <GitHubIcon />
+            </IconButton>
+          </Link>
+          <Link href="https://api.whatsapp.com/send?phone=5521991155468&text=Oi,%20gostaria%20de%20contratar." target="blank_">
+            <IconButton aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" color="inherit">
+              <WhatsAppIcon />
+            </IconButton>
+          </Link>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -189,7 +185,7 @@ function TopBar({ title }) {
           <ListItem
             button
             onClick={() => {
-              window.location.href = 'https://docs.google.com/document/d/1kwJsRjsvaXI3JNWC0XXSLUxOJlTsz_l70ksJSCBuIwo/edit?usp=sharing';
+              window.location.href = 'https://docs.google.com/document/d/1lkTEg8jJhDhrPwAkG6nuU0ho6C5kL29vhLXd0JrhspI/edit?usp=sharing';
             }}
           >
             <ListItemIcon>
@@ -203,7 +199,7 @@ function TopBar({ title }) {
           <ListItem
             button
             onClick={() => {
-              window.location.href = 'https://www.linkedin.com/in/christian-possidonio/';
+              window.location.href = 'https://www.linkedin.com/in/jonas-batista-da-silva-1ba7bb187/';
             }}
           >
             <ListItemIcon>
@@ -214,7 +210,7 @@ function TopBar({ title }) {
           <ListItem
             button
             onClick={() => {
-              window.location.href = 'https://github.com/christian-de-ornellas';
+              window.location.href = 'https://github.com/Jonassilva123';
             }}
           >
             <ListItemIcon>
@@ -225,7 +221,7 @@ function TopBar({ title }) {
           <ListItem
             button
             onClick={() => {
-              window.location.href = 'https://api.whatsapp.com/send?phone=5521980044029&text=Oi,%20gostaria%20de%20contratar.';
+              window.location.href = 'https://api.whatsapp.com/send?phone=5521991155468&text=Oi,%20gostaria%20de%20contratar.';
             }}
           >
             <ListItemIcon>
