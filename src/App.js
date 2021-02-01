@@ -5,8 +5,9 @@ import Home from './pages/Home';
 function App() {
   const theme = createMuiTheme({
     palette: {
+      type: 'dark',
       primary: {
-        main: '#fbc531',
+        main: '#e4e450',
       },
       secondary: {
         main: '#e4e450',

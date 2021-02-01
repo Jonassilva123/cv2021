@@ -6,7 +6,6 @@ import Header from '../../components/Header';
 const useStyles = makeStyles({
   root: {
     height: '100vh',
-    background: '#f3f2ef',
   },
 });
 
@@ -15,7 +14,7 @@ function Home() {
 
   return (
     <div className={classes.root}>
-      <TopBar title="Christian Possidonio" />
+      <TopBar title="Jonas Batista" />
       <Grid container justify="center" alignItems="center">
         <Grid item>
           <Header />
